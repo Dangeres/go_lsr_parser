@@ -12,7 +12,7 @@ import (
 	"github.com/anaskhan96/soup"
 )
 
-const folderFlats string = "flats/"
+const folderData string = "data/"
 const folderQueue string = "queue/"
 
 type ResponseJson struct {
@@ -116,7 +116,7 @@ func getAllFlats() []FlatJson {
 func saveFlat(flatJson FlatJson) {
 	data, _ := json.MarshalIndent(flatJson, "", "    ")
 
-	folder := folderFlats
+	folder := folderData
 
 	if !pathExists(folder) {
 		pathCreate(folder)
@@ -169,7 +169,7 @@ func readFileFlat(fileName string) FlatJson {
 
 func main() {
 
-	fmt.Println(pathFiles(folderFlats))
+	fmt.Println(pathFiles(folderData))
 
 	// fmt.Println(readFileFlat("flats/7a946d889db4e24bcfba1d4e1a741bb29c1f8559dda00ac1599933af25b614b1.json"))
 	data := getAllFlats()
