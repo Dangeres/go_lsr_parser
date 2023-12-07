@@ -1,0 +1,7 @@
+{
+    "host": "http://localhost:8081",
+    "sender": 205976282,
+    "token": "admin",
+    "await_time": 3600,
+    "send_telegram_message": true
+}

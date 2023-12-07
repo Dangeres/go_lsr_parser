@@ -2,3 +2,4 @@ data/
 queue/
 
 go.sum
+config_*.json
