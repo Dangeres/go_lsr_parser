@@ -3,3 +3,4 @@ queue/
 
 go.sum
 config_*.json
+__debug_bin
